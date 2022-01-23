@@ -1,0 +1,197 @@
+Welcome to LS Mall!
+Good day! Please input '1' to proceed.
+1
+Please enter 1-7 to choose the service provided.
+------------------------------------------------
+	1. WATCHES
+	2. SHOES
+	3. HANDBAGS
+	4. GARDEN
+	5. CAMERA
+	6. CLOTHES
+	7. INTERIOR DESIGN
+------------------------------------------------
+
+1
+************************************************************************
+                             TS House
+************************************************************************
+                     Lot 1A, Orchid IT Mall, 
+                     Street 5, Casual Garden, 
+                     10000 State.
+                     CareLine : 1300-88-9876
+                     H/P: 012-3789654   FAX: 04-3789675
+************************************************************************
+
+Welcome to TS House !
+TS House is providing the service to upgrade the program in your smartwatch.
+This program namely TS-1 will contain a few main features in helping you to track your fitness and while exercising.
+
+   Firstly, by updating this program, you are able to set your daily goal for burning calories. This will motivates you and 
+enable you to make it a habit to exercise regularly.
+   Secondly, the smartwatch will display your speed of exercising. This is to give you an idea about your speed and you can 
+improve it by exercising regularly. 
+   By updating the program, you will know the amount of calories you will need to burn and the duration you still need to 
+exercise in order to achieve your daily goal. You will become satisfy and have self-confidence as you can achieve your
+daily goal. Besides, you will have an idea about the duration you still need to exercise and glad to keep going.
+   Simply put, this program will helps monitor your exercise. In long term, you are able to lead a healthy lifestyle and 
+stay away from health problems such as high blood pressure, obesity and atherosclerosis. 
+
+Are you interested in our TS-1 ?
+Please enter 1 for updating pogram.
+1
+Updating .... Please wait
+
+Update suceeded. You are directed to the trial now.
+Please enter any integer to continue.
+1
+
+Dear user, what is your name? 
+wan
+Hi wan, what is you age?
+21
+Hi wan, what is you gender? Please enter 1 for female and 2 for male.
+1
+Hi wan, what is you weight in kg?
+43
+Hi wan, what is you height in cm?
+163
+  ACTIVITY LEVEL	  
+  1.2	 sedentary         (little to no exercise)
+  1.375	 lightly active    (light exercise 1–3 days per week)
+  1.55	 moderately active (moderate exercise 3–5 days per week)
+  1.725	 very active       (hard exercise 6–7 days per week)
+  1.9	 extra active      (very hard exercise or training or a physical job)  
+Hi wan, what is your activity level?
+1.2
+wan, your Resting Metabolic Rate (RMR) is 1182.75 kcal/day.
+wan, your Total Daily Energy Expenditure (TDEE) is 1419.30 cal/day.
+Are you trying to lose weight?
+Please enter 1 for losing weight, 2 for maintaining weight and 3 for gaining weight.
+2
+You are maintain weight. You should have 1419.30 kcal/day.
+Recommended goal : more than 283.86 kcal/day.
+Hi wan, please enter your goal to burn calories today. 
+300
+Please enter the distance traveled today in metres.
+200
+Please enter the time you have exercised today in minutes.
+10
+Please enter the calories burned today.
+25
+Your speed now is 20.0 m/min.
+
+By exercising at speed 20.0 m/min for 10.0 minutes, you can burn 25.00 calories. 
+
+You need to burn 275.00 more calories in order to achieve your daily goal.
+wan, keep going!
+
+You just need to exercise 110.0 minutes more to achieve your goal.
+wan, keep it up! 
+
+Trial completed.
+Details successfully updated.
+
+Thank you for using the trial.
+Now, you will be directed to the payment for this program, TS-1.
+
+Please enter any integer to continue.
+1
+
+The fees for updating the pogram is RM 150.
+Since we are having grand opening today, we have some promotion for you.
+We will have a mini game later on and this will be the discount rate.
+member: 20%, non-member: 5%, member winning the mini game: 30%, non-member winning the mini game: 8%
+
+First of all, would you like to be our member? The membership costs RM10 and it is for lifetime. Please enter 1 for yes and 2 for no.
+1
+Thank you. The mini game starts.
+
+INSTRUCTION : Miss TS, the TS Watch AI assistant will pick a random number as 'X' from 1-50.
+You will need to guess 'X' correctly in order to win the game. 
+For every wrong guess, you will be given a clue about 'X'.
+
+Are you ready? The game starts now. Please enter 1 to continue.
+1
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+              GUESS THE 'X'     
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+You have 5 chance(s) from now.     
+Please enter a random number from 1-50.     
+30
+Too high
+You have 4 chance(s) from now.     
+Please enter a random number from 1-50.     
+20
+Too high
+You have 3 chance(s) from now.     
+Please enter a random number from 1-50.     
+10
+Too high
+You have 2 chance(s) from now.     
+Please enter a random number from 1-50.     
+5
+Too high
+You have 1 chance(s) from now.     
+Please enter a random number from 1-50.     
+2
+Too low
+Oops, you lost. The X is 3. Nevermind, good luck next time.
+
+You have recieved discount at  20.0 %.
+Your discount price will be at RM  32.00. 
+Your final price will be at    RM 128.00. 
+
+Besides, you will have 12-month warranty for your program. 
+Your warranty code will be TS-100098.
+
+Here's a voucher for you.
+  ======================================  
+ //                                    \\
+ \\             VOUCHER                //
+ //____________________________________\\
+ \\                                    //
+ //         # ORCHID IT MALL           \\
+ \\         # TS HOUSE                 //
+ //                                    \\
+ \\      $$ DISCOUNT RM20 $$           //
+ //                                    \\
+ \\   **with purchase of RM200         //
+ //   **can be used once only          \\
+ \\   **use before 21 DEC 2022         //
+ //                                    \\
+ \\                                    //
+  ======================================  
+
+
+Are you interested in continue with other shops? Please input '1' to continue and any other integer to direct to payment.
+2
+
+Here is your receipt.
+
+*********************************************
+                   TS House
+*********************************************
+Lot 1A, Orchid IT Mall, 
+Street 5, Casual Garden, 
+10000 State.
+CareLine : 1300-88-9876
+H/P: 012-3789654            FAX: 04-3789675
+*********************************************
+ITEM                            QTY          
+Upgrading Pogram                 *1       
+
+
+Discount rate, %:                    0.00
+Discount price  :              RM    0.00
+Final price     :              RM   0.00
+_____________________________________________
+Amount paid     :              RM   0.00
+Change          :              RM    0.00
+
+
+
+*********************************************
+                  Thank You!
+              Please come again!
+*********************************************
