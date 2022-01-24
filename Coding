@@ -10,8 +10,8 @@ public class Lifestyle {
 		Scanner scan = new Scanner (System.in);	
 		
 		int conService;
-		double price = 0, discount = 0, discountRate = 0, cash = 0, change = 0;
-		double [] y = {price, discount, discountRate, cash, change};
+		double price = 0, discount = 0;
+		double [] y = {price, discount};
 		
 		System.out.println("Welcome to LS Mall!");
 		System.out.println("Good day! Please input '1' to proceed.");   
@@ -30,7 +30,11 @@ public class Lifestyle {
         	  String tsHouse = null;
         	  TSHouse(tsHouse);
         	  Program(lifestyle);
-        	  Price1(lifestyle,conService, y);
+        	  Price1(lifestyle, y);
+        	  for (int index = 1; index < y.length; index++) {
+        	  price = price + price;
+        	  discount = discount +discount;
+        	  }
 		 }
         else if(lifestyle == 2){
         	  
@@ -58,6 +62,76 @@ public class Lifestyle {
 		 System.out.println("Are you interested in continue with other shops? Please input '1' to continue and any other integer to direct to payment.");
 		 conService = scan.nextInt();
 }
+// PAYMENT
+		if (conService!=1) {
+			int pay;
+			double cash = 0 ;
+			double change = 0;
+			System.out.println("Do you want to pay by cash or by card? Please enter 1 for cash and 2 for card.");
+			pay = scan.nextInt();
+			if(pay==2) {
+				int password, password1;
+				int k;
+				System.out.println("Please enter your numerical password. ");
+				password = scan.nextInt();
+				System.out.println("Please re-enter your password.");
+				password1 = scan.nextInt();
+				
+				
+				for (k=3; k>=0; k--) {
+					if(k==0) {
+						System.out.println("LOGIN FAILED. Please pay by cash. Please enter 1.");
+						pay = scan.nextInt();
+						break;
+				        }
+					if (password == password1) { 
+						System.out.println("Correct password. ");
+						System.out.print("The final price you should pay is RM " );	
+						System.out.printf("%.2f",price);	
+						System.out.println(". " );
+						System.out.println("RM "+price+" ENTERED.");
+						System.out.println("THANK YOU.");
+						cash = price;
+					break;
+					}
+					else if(password != password1) {
+						System.out.println("Wrong password. ");
+						System.out.println("You have "+k+" more chance(s). Please re-enter your password.");
+						password1 = scan.nextInt();				
+					}
+					
+					
+				}
+				
+			}
+			if(pay==1) {
+				System.out.print("The final price you should pay is RM " );	
+				System.out.printf("%.2f",price);	
+				System.out.println(". " );
+				System.out.println("Please enter the amount you want to pay." );
+				cash = scan.nextDouble();
+				while(cash<price) {
+					System.out.print("The final price you should pay is RM " );	
+					System.out.printf("%.2f",price);	
+					System.out.println(". " );
+					System.out.println("Please re-enter the amount you want to pay." );
+					cash = scan.nextDouble();
+				}
+				if(cash==price) {
+					System.out.print("The price you paid is RM " );	
+					System.out.printf("%.2f",price);	
+					System.out.println(". " );
+					System.out.println("Thank you." );
+			    }else if(cash>price) {
+			    	change=cash-price;
+			    	System.out.print("The price you paid is RM" );	
+					System.out.printf("%.2f",cash);	
+					System.out.println(". " );
+					System.out.print("Thank you. This is your change RM " );
+					System.out.printf("%.2f",change);	
+					System.out.println(". " );
+			    }
+			}
 		//PRINT RECEIPT
 	
 		System.out.println();
@@ -89,8 +163,6 @@ public class Lifestyle {
 		System.out.println("Interior Design Package          *1       ");
 		System.out.println();
 		System.out.println();
-		System.out.print("Discount rate, %:                    ");
-		System.out.printf("%.2f%n",discountRate);
 		System.out.print("Discount price  :              RM    ");
 		System.out.printf("%.2f%n",discount);
 		System.out.print("Final price     :              RM   ");
@@ -113,7 +185,7 @@ public class Lifestyle {
 		
 		scan.close();	
 }
-	
+	}	
 //1. INPUT USER DETAILS and MAIN PROGRAM
 	
 	public static void Program(int program) {
@@ -318,8 +390,9 @@ else if (program == 2) {
 		System.out.println();
 		}
 	
+	
 //3. MEMBERSHIP, DISCOUNT
-	public static double[] Price1( double price1,double conService2, double []x) {
+	public static double[] Price1 ( double price1, double []x) {
 		Scanner scan = new Scanner (System.in);	
 		double member;
 		int game;
@@ -474,119 +547,12 @@ else if(price1 ==2) {
 	
  }
 
+double [] y = {price, discount};
 
 
-
-//4. PAYMENT
-if (conService2!=1) {
-		int pay;
-		double cash = 0 ;
-		double change = 0;
-		System.out.println("Do you want to pay by cash or by card? Please enter 1 for cash and 2 for card.");
-		pay = scan.nextInt();
-		if(pay==2) {
-			int password, password1;
-			int k;
-			System.out.println("Please enter your numerical password. ");
-			password = scan.nextInt();
-			System.out.println("Please re-enter your password.");
-			password1 = scan.nextInt();
-			
-			
-			for (k=3; k>=0; k--) {
-				if(k==0) {
-					System.out.println("LOGIN FAILED. Please pay by cash. Please enter 1.");
-					pay = scan.nextInt();
-					break;
-			        }
-				if (password == password1) { 
-					System.out.println("Correct password. ");
-					System.out.print("The final price you should pay is RM " );	
-					System.out.printf("%.2f",price);	
-					System.out.println(". " );
-					System.out.println("RM "+price+" ENTERED.");
-					System.out.println("THANK YOU.");
-					cash = price;
-				break;
-				}
-				else if(password != password1) {
-					System.out.println("Wrong password. ");
-					System.out.println("You have "+k+" more chance(s). Please re-enter your password.");
-					password1 = scan.nextInt();				
-				}
-				
-				
-			}
-			
-		}
-		if(pay==1) {
-			System.out.print("The final price you should pay is RM " );	
-			System.out.printf("%.2f",price);	
-			System.out.println(". " );
-			System.out.println("Please enter the amount you want to pay." );
-			cash = scan.nextDouble();
-			while(cash<price) {
-				System.out.print("The final price you should pay is RM " );	
-				System.out.printf("%.2f",price);	
-				System.out.println(". " );
-				System.out.println("Please re-enter the amount you want to pay." );
-				cash = scan.nextDouble();
-			}
-			if(cash==price) {
-				System.out.print("The price you paid is RM " );	
-				System.out.printf("%.2f",price);	
-				System.out.println(". " );
-				System.out.println("Thank you." );
-		    }else if(cash>price) {
-		    	change=cash-price;
-		    	System.out.print("The price you paid is RM" );	
-				System.out.printf("%.2f",cash);	
-				System.out.println(". " );
-				System.out.print("Thank you. This is your change RM " );
-				System.out.printf("%.2f",change);	
-				System.out.println(". " );
-		    }
-		}
-		double [] y = {price, discount, discountRate, cash, change};
-		x = y;	
+return y;
 }
-return x;
+
 
 }	
 
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
