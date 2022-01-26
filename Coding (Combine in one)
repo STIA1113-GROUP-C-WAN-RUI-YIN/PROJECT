@@ -10,59 +10,69 @@ public class Lifestyle {
 		Scanner scan = new Scanner (System.in);	
 		
 		int conService;
-		double price = 0, discount = 0;
-		double [] y = {price, discount};
-		
+		double [] x = new double [8];
+		double [] y = new double [3];
+		double price = 0;
+		double discount = 0;
+		int lifestyle = 0;
 		System.out.println("Welcome to LS Mall!");
 		System.out.println("Good day! Please input '1' to proceed.");   
 		conService = scan.nextInt();
-		System.out.println("Please enter 1-7 to choose the service provided.");
-		System.out.println("------------------------------------------------");
-		System.out.println("\t1. WATCHES" + "\n\t2. SHOES" + "\n\t3. HANDBAGS" + "\n\t4. GARDEN" +
-		                  "\n\t5. CAMERA" + "\n\t6. CLOTHES" + "\n\t7. INTERIOR DESIGN");
-		System.out.println("------------------------------------------------");
-		int lifestyle = scan.nextInt();
+		
 		
 		while (conService == 1) {  
+			System.out.println("Please enter 1-7 to choose the service provided.");
+			System.out.println("------------------------------------------------");
+			System.out.println("\t1. WATCHES" + "\n\t2. SHOES" + "\n\t3. HANDBAGS" + "\n\t4. GARDEN" +
+			                  "\n\t5. CAMERA" + "\n\t6. CLOTHES" + "\n\t7. INTERIOR DESIGN");
+			System.out.println("------------------------------------------------");
+			lifestyle = scan.nextInt();
 		 if (lifestyle == 1){
         	//WATCHES
         	 
         	  String tsHouse = null;
         	  TSHouse(tsHouse);
         	  Program(lifestyle);
-        	  Price1(lifestyle, y);
-        	  for (int index = 1; index < y.length; index++) {
-        	  price = price + price;
-        	  discount = discount +discount;
-        	  }
-		 }
+        	  y = Price2();
+        	  x[0]=1;
+           	  }
+		 
         else if(lifestyle == 2){
-        	  
+        	y = Price2();
+        	 x[1]=2;
         }
         else if(lifestyle == 3){
         	//HANDBAGS
+        	x[2]=3;
         }
         else if(lifestyle == 4){
         	//GARDEN
+        	x[3]=4;
         }
         else if(lifestyle == 5){
         	//CAMERA
-        }
+        	x[4]=5;
+        	}
         else if(lifestyle == 6){
         	//CLOTHES
+        	x[5]=6;
         }    
         else if(lifestyle == 7){
         	//INTERIOR DESIGN
+        	x[6]=7;
         }       
         else {
             System.out.println("Please try again.");
             System.out.println("Please input '1' to proceed.");   
     		conService = scan.nextInt();
 	}
+    	  price = price + y[0];
+    	  discount = discount + y[1]; 
 		 System.out.println("Are you interested in continue with other shops? Please input '1' to continue and any other integer to direct to payment.");
 		 conService = scan.nextInt();
 }
 // PAYMENT
+		
 		if (conService!=1) {
 			int pay;
 			double cash = 0 ;
@@ -147,20 +157,22 @@ public class Lifestyle {
 		System.out.println("H/P: 012-3789654            FAX: 04-3789675");
 		System.out.println("*********************************************");
 		System.out.println("ITEM                            QTY          ");
-		if(lifestyle ==1)
+		for(int i =0; i< x.length; i++) {
+		if(x[i] ==1)
 		System.out.println("Upgrading Pogram                 *1       ");
-		if(lifestyle ==2)
+		if(x[i] ==2)
 		System.out.println("Shoe Package                     *1       ");
-		if(lifestyle ==3)
+		if(x[i] ==3)
 		System.out.println("Handbag                          *1       ");
-		if(lifestyle ==4)
+		if(x[i] ==4)
 		System.out.println("Garden Ticket Package            *1       ");
-		if(lifestyle ==5)
+		if(x[i] ==5)
 		System.out.println("Camera                           *1       ");
-		if(lifestyle ==6)
+		if(x[i] ==6)
 		System.out.println("Clothes Package                  *1       ");
-		if(lifestyle ==7)
+		if(x[i] ==7)
 		System.out.println("Interior Design Package          *1       ");
+		}
 		System.out.println();
 		System.out.println();
 		System.out.print("Discount price  :              RM    ");
@@ -185,7 +197,8 @@ public class Lifestyle {
 		
 		scan.close();	
 }
-	}	
+	}		
+
 //1. INPUT USER DETAILS and MAIN PROGRAM
 	
 	public static void Program(int program) {
@@ -392,7 +405,7 @@ else if (program == 2) {
 	
 	
 //3. MEMBERSHIP, DISCOUNT
-	public static double[] Price1 ( double price1, double []x) {
+	public static double[] Price2 (){
 		Scanner scan = new Scanner (System.in);	
 		double member;
 		int game;
@@ -401,7 +414,7 @@ else if (program == 2) {
 		double discountRate=0;
 		int warranty = 0;
 		String warrantyCode = null;
-if (price1 == 1) {
+		
 		System.out.println("The fees for updating the pogram is RM 150.");
 		System.out.println("Since we are having grand opening today, we have some promotion for you.");
 		System.out.println("We will have a mini game later on and this will be the discount rate.");
@@ -540,19 +553,15 @@ if (price1 == 1) {
 		System.out.println("  ======================================  ");
 		System.out.println();
 		System.out.println();
-	}
-else if(price1 ==2) {
-	System.out.println();
-	
-	
- }
 
 double [] y = {price, discount};
 
 
 return y;
+	}
+
+	
+ 
+
 }
-
-
-}	
 
