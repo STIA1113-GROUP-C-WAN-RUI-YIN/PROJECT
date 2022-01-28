@@ -473,12 +473,7 @@ public class Watches {
 	
 	
 	
-	scan.close();	
 	
 }	
 	
 	
-	
-	
-
-}
