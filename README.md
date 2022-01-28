@@ -21,16 +21,16 @@ B)Copy coding to its respective class.
 C)Try running all 1-7 services.
 
 
-//Please tell me if there is anything wrong.
-//Feel free to ask me if you have any questions.
-//You may give your opinions in whatsapp group.
+#Please tell me if there is anything wrong.
+#Feel free to ask me if you have any questions.
+#You may give your opinions in whatsapp group.
 THANK YOU.
 
 
 
 
 
-Program Description
+Z) Program Description
      This program is create by members of Group 7 from A211 STIA1113 Programming 1 Group C regarding their topic LIFESTYLE for their final java project. The techniques used are numerical computation and expression, control selection structures, repetition structured, methods and arrays.
      This program contains a menu for 7 type of services in LS Mall which includes watches, shoes, handbags, garden, camera, clothes and interior design. The program will run while the user is still interested in using the services in LS Mall.
       For watches, the shop is named TS House and offers a program for user to set daily goal for burning calories. The user will be directed to trial for this program and may choose to pay for it. There will be a mini game for the customer before the payment to increase the discount rate. However, member will be receiving more discount for updating the program. For shoes, the shop is Rayyan Sport Shoe Shop which offers different package of shoes with various brands, type and design. The shoe packages are come with different offer set for the customers.
