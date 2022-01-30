@@ -65,7 +65,7 @@ Scanner scan = new Scanner (System.in);
     		conService = scan.nextInt();
 	}
 		 System.out.println();
-		 System.out.println("Are you interested in continue with other shops? Please input '1' to continue and any other integer to direct to payment.");
+		 System.out.println("Are you interested in continue with other shops? Please input '1' to continue or any other integers to stop.");
 		 conService = scan.nextInt();
 }
 		
@@ -78,3 +78,4 @@ Scanner scan = new Scanner (System.in);
 	
 	
 }
+
